@@ -20,8 +20,6 @@ const Navbar = () => {
                     <span className="indicator-item badge badge-secondary">{keysLength}</span>
                     <button ><FaShoppingCart className='text-2xl' /></button>
                 </Link>
-
-
             </div>
 
         </div>
