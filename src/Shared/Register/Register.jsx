@@ -42,25 +42,10 @@ const Register = () => {
                     </label>
                     <input type="password" name='password' className="input input-bordered input-info w-full" required />
                 </div>
-                {/* <div className=' my-5'>
-                    <span className="label-text text-base font-semibold">Select Role:</span>
-                    <select name='role' className="select text-lg select-info w-full" defaultValue='Buyer'>
-                        <option>buyer</option>
-                        <option>seller</option>
-                    </select>
-                </div> */}
-                {/* {
-                    error ?
-                        <p className='text-lg text-red-600 font-semibold'>{error}</p>
-                        :
-                        ""
-                } */}
                 <input type="submit" value='Sign up' className='btn btn-info w-full my-3' />
             </form>
             <div className='w-3/4 mx-auto'>
                 <p>Already Have an Account? <Link to='/login' className='text-info hover:text-sky-600 duration-200 underline'>Log in</Link> </p>
-                {/* <div className="divider">OR</div>
-                <button onClick={handleGoogleLogin} className='btn text-base btn-outline btn-info w-full text-white'>Continue With Google</button> */}
             </div>
 
         </div >

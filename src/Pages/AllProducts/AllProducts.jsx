@@ -20,11 +20,10 @@ const AllProducts = () => {
 
 
     const handleAddToCart = (selectedProduct) => {
-        // console.log(selectedProduct);
-        // const newCart = [...cart, selectedProduct]
+
         let newCart = [];
         const exists = cart.find(product => product._id === selectedProduct);
-        // console.log(exists);
+
         if (exists) {
             const rest = cart.filter(product => product._id !== selectedProduct._id)
             exists.quantity = exists.quantity + 1;
@@ -44,10 +43,6 @@ const AllProducts = () => {
         <div className='w-11/12 mx-auto my-10 pt-16'>
             <h1 className='text-4xl font-bold text-center underline'>Product List</h1>
             <div className='mt-5'>
-                {/* <Link className='text-lg font-bold text-red-600 flex justify-end items-center gap-3'>
-                    See All
-                    <FaArrowRight />
-                </Link> */}
                 <div className='grid grid-cols-4 gap-5 '>
                     {
                         products?.map((product, i) =>

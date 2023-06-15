@@ -40,8 +40,6 @@ const Login = () => {
             </form>
             <div className='w-3/4 mx-auto'>
                 <p>New to doctors Porta? <Link to='/signup' className='text-info hover:text-sky-600 duration-200 underline'>Create New Account</Link> </p>
-                {/* <div className="divider">OR</div>
-                <button onClick={handleGoogleLogin} className='btn text-base btn-outline btn-info w-full text-white'>Continue With Google</button> */}
             </div>
 
         </div >

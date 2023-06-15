@@ -12,19 +12,14 @@ const Cart = () => {
     const shoppingCart = JSON.parse(products)
 
     const keys = Object.keys(shoppingCart);
-    // console.log(keys);
-    for (const key in keys) {
-        // console.log(shoppingCart[keys[key]]);
-    }
-    // console.log(shoppingCart[]);
+
 
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => {
-                // console.log(data);
                 const orderedProduct = data?.filter(product => keys?.find(order => order == product?._id))
-                // console.log(orderedProduct);
+
                 setCartProduct(orderedProduct)
             })
     }, [])

@@ -11,7 +11,6 @@ const OrderList = () => {
 
             <div className="overflow-x-auto m-10">
                 <table className="table table-zebra">
-                    {/* head */}
                     <thead>
                         <tr className='bg-gray-400 text-white text-lg'>
                             <th>Sl</th>
@@ -21,7 +20,6 @@ const OrderList = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {/* row 1 */}
                         {
                             orders?.map((customer, i) =>
                                 <tr key={i}>

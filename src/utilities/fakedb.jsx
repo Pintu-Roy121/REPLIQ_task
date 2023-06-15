@@ -3,7 +3,6 @@
 const addToDB = (id) => {
     let shoppingCart = getStoredCart();
 
-
     const quantity = shoppingCart[id];
 
     if (quantity) {
@@ -18,7 +17,7 @@ const addToDB = (id) => {
 const getStoredCart = () => {
     let shoppingCart = {};
     const storedCart = localStorage.getItem('Shopping-cart');
-    // console.log(storedCart);
+
     if (storedCart) {
         shoppingCart = JSON.parse(storedCart)
     }
@@ -27,7 +26,7 @@ const getStoredCart = () => {
 
 const removeFromDb = id => {
     const storedCart = localStorage.getItem('Shopping-cart');
-    // console.log(storedCart);
+
     if (storedCart) {
         const shoppingCart = JSON.parse(storedCart);
         if (id in shoppingCart) {

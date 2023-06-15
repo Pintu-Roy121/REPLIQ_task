@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const products = [
@@ -185,7 +185,6 @@ const ProductList = () => {
 
             <div className="overflow-x-auto m-5">
                 <table className="table">
-                    {/* head */}
                     <thead>
                         <tr className='text-lg font-semibold bg-slate-200'>
                             <th>
@@ -200,7 +199,6 @@ const ProductList = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {/* row 1 */}
                         {
                             products?.map((product, i) =>
                                 <tr key={i}>
